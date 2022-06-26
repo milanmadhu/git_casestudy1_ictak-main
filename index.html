@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #2b6ba7;
+  }
+  .container{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+  }
+
+  .container h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .container input[type = "text"],.box input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .container input[type = "text"]:focus,.box input[type = "text"]:focus{
+    width: 200px;
+    border-color: #2ecc71;
+  }
+  .container input[type = "Password"],.box input[type = "Password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .container input[type = "Password"]:focus,.box input[type = "Password"]:focus{
+    width: 200px;
+    border-color: #2ecc71;
+  }
+  .container input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .container input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+  
+ 
+</style>
+</head>
+<body>
+<div class="container">
+ 
+
+    <form action="todo.html" onsubmit="return validate()" class="login">
+        <h2>Login</h2>
+        <br>
+        <div class="login-cont">
+            <br>
+            <input type="text" placeholder="Username" id="admin">
+            <span id="admin_" class="text-danger"></span>
+        </div>
+        <br>
+        <div class="login-cont">
+            <br>
+            <input type="Password" placeholder="Password" id="password">
+        </div>
+        <br>
+        <div>
+            <input id="login-button" type="submit" value="Log in">
+           
+        </div>
+    </form>
+ 
+</div>
+
+   
+   <script src="validate.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        th, td
+         {
+            font:14px Verdana;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body{
+            background: cover;
+            background-repeat:no-repeat;
+            background-size: 500px;
+            background-position: center;
+            background-attachment:fixed ;
+            background-color:#2b6ba7;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="center">
+            <thead>
+                <tr>
+                    <!--<th><input type="checkbox" class="check" onclick="return _myfunc()"></th>-->
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>CHECKBOX</th>
+                </tr>
+            </thead>
+                <tbody id="data">
+
+
+                </tbody>
+
+        </table>
+    </div>
+    <!--<div>
+        
+
+        <span class="notvalid"> </span>
+
+    </div>-->
+
+    <script src="todolist1.js"></script>
+    
+</body>
+</html>
